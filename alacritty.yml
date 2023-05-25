@@ -120,46 +120,19 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: monospace
-
-    # The `style` can be specified to pick a specific face.
-    #style: Regular
-
-  # Bold font face
-  #bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
+    family: ComicShannsMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
 
-  # Italic font face
-  #italic:
-    # Font family
-    #
-    # If the italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    family: monospace
+    #style: Regular
 
-    # The `style` can be specified to pick a specific face.
     #style: Italic
 
-  # Bold italic font face
-  #bold_italic:
-    # Font family
-    #
-    # If the bold italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-
-    # The `style` can be specified to pick a specific face.
     #style: Bold Italic
 
   # Point size
-  size: 13
+  size: 15
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -927,31 +900,37 @@ working_directory: /home/sorria/project
 #    magenta: '0xbb006b'
 #    cyan: '0x433364'
 #    white: '0x5f5f5f'
+# Colors (Wombat)
+# Colors (Base16 Default Dark)
+# Colors (Gotham)
+# Colors (Ayu Dark)
+# From the famous Cobalt2 sublime theme
+# Source : https://github.com/wesbos/cobalt2/tree/master/Cobalt2
+# Colors (Solarized Light)
+# XTerm's default colors
 colors:
+  # Default colors
   primary:
-    background: '0x1e2030'
-    foreground: '0x7f85a3'
-
-  cursor:
-    text:   '0x7f85a3'
-    cursor: '0x808080'
-
+    background: '0x000000'
+    foreground: '0xffffff'
+  # Normal colors
   normal:
-    black:   '0x444a73'
-    red:     '0xff5370'
-    green:   '0x4fd6be'
-    yellow:  '0xffc777'
-    blue:    '0x3e68d7'
-    magenta: '0xfc7b7b'
-    cyan:    '0x86e1fc'
-    white:   '0xd0d0d0'
+    black:   '0x000000'
+    red:     '0xcd0000'
+    green:   '0x00cd00'
+    yellow:  '0xcdcd00'
+    blue:    '0x0000ee'
+    magenta: '0xcd00cd'
+    cyan:    '0x00cdcd'
+    white:   '0xe5e5e5'
 
+  # Bright colors
   bright:
-    black:   '0x828bb8'
-    red:     '0xff98a4'
-    green:   '0xc3e88d'
-    yellow:  '0xffc777'
-    blue:    '0x82aaff'
-    magenta: '0xff966c'
-    cyan:    '0xb4f9f8'
-    white:   '0x5f8787'
+    black:   '0x7f7f7f'
+    red:     '0xff0000'
+    green:   '0x00ff00'
+    yellow:  '0xffff00'
+    blue:    '0x5c5cff'
+    magenta: '0xff00ff'
+    cyan:    '0x00ffff'
+    white:   '0xffffff'
