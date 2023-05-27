@@ -1,5 +1,5 @@
 ```bash
-	Usage: alacritty_themes [OPTION]...
+	Usage: alacritty_themes.sh [OPTION]...
 	
 	OPTION: 
 		[EMPTY]: randomly switch into the themes
