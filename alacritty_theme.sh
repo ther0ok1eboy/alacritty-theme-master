@@ -51,7 +51,8 @@ copy_to_file(){
 	if [[ $COLOR_START_LINE == "" || $COLOR_START_LINE -lt 1 ]]; then
 		cat $1 >> $ALACRITTY_PATH
 	else
-		sed -i "${COLOR_START_LINE},${COLOR_END_LINE}d" $ALACRITTY_PATH
+		TRAILING=$(echo $COLOR_START_LINE | awk '{print $NF}')
+		sed -i "${TRAILING},${COLOR_END_LINE}d" $ALACRITTY_PATH
 		cat $1 >> $ALACRITTY_PATH
 	fi
 
