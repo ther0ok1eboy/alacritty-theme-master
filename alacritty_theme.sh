@@ -45,8 +45,8 @@ name_option(){
 
 copy_to_file(){
 
-	COLOR_START_LINE=$(cat $ALACRITTY_PATH | egrep -n "^#\sColors\s\(.+\)" | awk -F ":" '{print $1}')
-	COLOR_END_LINE=$(cat $ALACRITTY_PATH | egrep -n "^\s+white:" | tail -n 1 | awk '{print $1}' | awk -F ":" '{print $1}')
+	COLOR_START_LINE=$(cat $ALACRITTY_PATH | grep -E -n "^#\sColors\s\(.+\)" | awk -F ":" '{print $1}')
+	COLOR_END_LINE=$(cat $ALACRITTY_PATH | grep -E -n "^\s+white:" | tail -n 1 | awk '{print $1}' | awk -F ":" '{print $1}')
 	
 	if [[ $COLOR_START_LINE == "" || $COLOR_START_LINE -lt 1 ]]; then
 		cat $1 >> $ALACRITTY_PATH
@@ -90,18 +90,18 @@ size_option(){
 		exit 1
 	fi
 	
-	SIZE_NOW=$(cat $ALACRITTY_PATH | egrep "^\s+size:\s[1-9][0-9]")
+	SIZE_NOW=$(cat $ALACRITTY_PATH | grep -E "^\s+size:\s[1-9][0-9]")
 	
 	sed -i "s/${SIZE_NOW}/  size: $1/g" $ALACRITTY_PATH
 
 }
 
 show_option(){
-	FONT_NAME="$(egrep "^\s+family: " ${ALACRITTY_PATH} | awk '{print $2,$3,$4,$5}')"
-	FONT_SIZE=$(egrep "^\s+size:\s[1-9][0-9]" ${ALACRITTY_PATH} | awk '{print $2}')
-	START_SHELL="$(egrep "^\s+program:" ${ALACRITTY_PATH} | awk '{print $2}')"
-	START_DIR="$(egrep "^working_directory:" ${ALACRITTY_PATH} | awk '{print $2}')"
-	COLOR_THEME="$(egrep "^#\s+Colors\s\(.+\)" ${ALACRITTY_PATH} | awk -F "(" '{print $2}')"
+	FONT_NAME="$(grep -E "^\s+family: " ${ALACRITTY_PATH} | awk '{print $2,$3,$4,$5}')"
+	FONT_SIZE=$(grep -E "^\s+size:\s[1-9][0-9]" ${ALACRITTY_PATH} | awk '{print $2}')
+	START_SHELL="$(grep -E "^\s+program:" ${ALACRITTY_PATH} | awk '{print $2}')"
+	START_DIR="$(grep -E "^working_directory:" ${ALACRITTY_PATH} | awk '{print $2}')"
+	COLOR_THEME="$(grep -E "^#\s+Colors\s\(.+\)" ${ALACRITTY_PATH} | awk -F "(" '{print $2}')"
 
 	echo ${COLOR_THEME//)/ }
 }
