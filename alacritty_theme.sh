@@ -48,10 +48,8 @@ copy_to_file(){
 	COLOR_START_LINE=$(cat $ALACRITTY_PATH | egrep -n "^#\sColors\s\(.+\)" | awk -F ":" '{print $1}')
 	COLOR_END_LINE=$(cat $ALACRITTY_PATH | egrep -n "^\s+white:" | tail -n 1 | awk '{print $1}' | awk -F ":" '{print $1}')
 	
-	if [[ $COLOR_START_LINE == "" || $COLOR_START_LINE -lt 1 ]]
-	then
+	if [[ $COLOR_START_LINE == "" || $COLOR_START_LINE -lt 1 ]]; then
 		cat $1 >> $ALACRITTY_PATH
-		
 	else
 		sed -i "${COLOR_START_LINE},${COLOR_END_LINE}d" $ALACRITTY_PATH
 		cat $1 >> $ALACRITTY_PATH
