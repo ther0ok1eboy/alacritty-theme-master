@@ -1,4 +1,6 @@
+# Colors (Xterm)
 # XTerm's default colors
+
 colors:
   # Default colors
   primary:
