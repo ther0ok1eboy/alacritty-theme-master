@@ -47,8 +47,10 @@ copy_to_file(){
 
 	COLOR_START_LINE=$(cat $ALACRITTY_PATH | grep -E -n "^#\sColors\s\(.+\)" | awk -F ":" '{print $1}')
 	COLOR_END_LINE=$(cat $ALACRITTY_PATH | grep -E -n "^\s+white:" | tail -n 1 | awk '{print $1}' | awk -F ":" '{print $1}')
-	
-	if [[ $COLOR_START_LINE == "" || $COLOR_START_LINE -lt 1 ]]; then
+
+	ALTERNATIVE=$(echo $COLOR_START_LINE | grep -oE '[0-9]+' | wc -l)
+
+	if [[ $COLOR_START_LINE == "" || $ALTERNATIVE -lt 1 ]]; then
 		cat $1 >> $ALACRITTY_PATH
 	else
 		TRAILING=$(echo $COLOR_START_LINE | awk '{print $NF}')
