@@ -164,7 +164,6 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night)
 #colors:
   # Default colors
   #primary:
@@ -857,80 +856,36 @@ working_directory: /home/sorria/project
   # Highlight window damage information.
   #highlight_damage: false
 
-
-#colors:
-#  # COLORSCHEME: horizon-dark.yaml
-#  # Primary colors
-#  primary:
-#    background: '0x1c1e26'
-#    foreground: '0xe0e0e0'
-#
-#  # Normal colors
-#  normal:
-#    black: '0x16161c'
-#    red: '0xe95678'
-#    green: '0x29d398'
-#    yellow: '0xfab795'
-#    blue: '0x26bbd9'
-#    magenta: '0xee64ac'
-#    cyan: '0x59e1e3'
-#    white: '0xd5d8da'
-#
-#  # Bright colors
-#  bright:
-#    black: '0x5b5858'
-#    red: '0xec6a88'
-#    green: '0x3fdaa4'
-#    yellow: '0xfbc3a7'
-#    blue: '0x3fc4de'
-#    magenta: '0xf075b5'
-#    cyan: '0x6be4e6'
-#    white: '0xd5d8da'
-#  cursor:
-#    text: '0xeeeeee'
-#    cursor: '0x878787'
-#
-#  # Normal colors
-#  dim:
-#    black: '0x000000'
-#    red: '0xa90000'
-#    green: '0x049f2b'
-#    yellow: '0xa3b106'
-#    blue: '0x530aba'
-#    magenta: '0xbb006b'
-#    cyan: '0x433364'
-#    white: '0x5f5f5f'
-# Colors (Wombat)
-# Colors (Base16 Default Dark)
-# Colors (Gotham)
-# Colors (Ayu Dark)
 # From the famous Cobalt2 sublime theme
 # Source : https://github.com/wesbos/cobalt2/tree/master/Cobalt2
-# Colors (Solarized Light)
-# XTerm's default colors
+# Colors (Challenger Deep)
 colors:
   # Default colors
   primary:
-    background: '0x000000'
-    foreground: '0xffffff'
+    background: '0x1e1c31'
+    foreground: '0xcbe1e7'
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0xff271d'
+    cursor: '0xfbfcfc'
   # Normal colors
   normal:
-    black:   '0x000000'
-    red:     '0xcd0000'
-    green:   '0x00cd00'
-    yellow:  '0xcdcd00'
-    blue:    '0x0000ee'
-    magenta: '0xcd00cd'
-    cyan:    '0x00cdcd'
-    white:   '0xe5e5e5'
-
+    black:   '0x141228'
+    red:     '0xff5458'
+    green:   '0x62d196'
+    yellow:  '0xffb378'
+    blue:    '0x65b2ff'
+    magenta: '0x906cff'
+    cyan:    '0x63f2f1'
+    white:   '0xa6b3cc'
   # Bright colors
   bright:
-    black:   '0x7f7f7f'
-    red:     '0xff0000'
-    green:   '0x00ff00'
-    yellow:  '0xffff00'
-    blue:    '0x5c5cff'
-    magenta: '0xff00ff'
-    cyan:    '0x00ffff'
-    white:   '0xffffff'
+    black:   '0x565575'
+    red:     '0xff8080'
+    green:   '0x95ffa4'
+    yellow:  '0xffe9aa'
+    blue:    '0x91ddff'
+    magenta: '0xc991e1'
+    cyan:    '0xaaffe4'
+    white:   '0xcbe3e7'
+
