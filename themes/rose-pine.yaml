@@ -1,3 +1,5 @@
+# Colors (Rose Pine)
+
 colors:
   primary:
     background: "0x191724"
@@ -23,6 +25,13 @@ colors:
     magenta: "0xc4a7e7"
     cyan: "0xebbcba"
     white: "0xe0def4"
+  hints:
+    start:
+      foreground: "#908caa"
+      background: "#1f1d2e"
+    end:
+      foreground: "#6e6a86"
+      background: "#1f1d2e"
   bright:
     black: "0x6e6a86"
     red: "0xeb6f92"
@@ -32,10 +41,3 @@ colors:
     magenta: "0xc4a7e7"
     cyan: "0xebbcba"
     white: "0xe0def4"
-  hints:
-    start:
-      foreground: "#908caa"
-      background: "#1f1d2e"
-    end:
-      foreground: "#6e6a86"
-      background: "#1f1d2e"

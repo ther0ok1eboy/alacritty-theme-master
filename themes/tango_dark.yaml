@@ -1,4 +1,6 @@
+# Colors (Tango Dark)
 # GNOME Terminal Tango Dark
+
 colors:
   primary:
     background: '0x2e3436'

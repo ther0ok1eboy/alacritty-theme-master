@@ -1,4 +1,6 @@
+# Colors (Konsole Linux)
 # Color theme ported from Konsole: Linux colors 
+
 colors:  
   primary:
     foreground: '0xe3e3e3'

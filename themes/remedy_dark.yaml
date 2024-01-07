@@ -1,3 +1,5 @@
+# Colors (Remedy Dark)
+
 colors:
   # Default colors
   primary:
@@ -34,5 +36,5 @@ colors:
     green:   '0xb5bd68'
     magenta: '0xb294bb'
     red:     '0xcc6666'
-    white:   '0xc5c8c6'
     yellow:  '0xf0c674'
+    white:   '0xc5c8c6'
